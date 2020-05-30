@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>flames</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href={% static 'images/icons/favicon.ico' %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static 'vendor/bootstrap/css/bootstrap.min.css' %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static 'fonts/iconic/css/material-design-iconic-font.min.css' %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static 'vendor/animate/animate.css' %}>
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href={% static 'vendor/css-hamburgers/hamburgers.min.css' %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static 'vendor/animsition/css/animsition.min.css' %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static 'vendor/select2/select2.min.css' %}>
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href={% static 'vendor/daterangepicker/daterangepicker.css' %}>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href={% static 'css/util.css' %}>
+	<link rel="stylesheet" type="text/css" href={% static 'css/main.css' %}>
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-85 p-b-20">
+				<form action="add" method="POST"  class="login100-form validate-form">
+					{% csrf_token %}
+					<span class="login100-form-title p-b-70">
+						FLAMES
+					</span>
+					<span class="login100-form-avatar">
+						<img src={% static 'images/down.jpg' %} alt="AVATAR">
+					</span>
+
+					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "n1">
+						<input class="input100" type="text" name="n1">
+						<span class="focus-input100" data-placeholder="Yourname"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-50" data-validate="n2">
+						<input class="input100" type="text" name="n2">
+						<span class="focus-input100" data-placeholder="Partner's name"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button type="submit" class="login100-form-btn">
+							GO
+						</button>
+					</div>
+					<ul class="login-more p-t-190">
+						<li class="m-b-8">
+							<span class="txt1">
+								share with friends 
+							</span>
+							
+							</a>
+						</li>
+
+						<li>
+							<span class="txt1">
+							we didn't save your name in server ,it's completey safe and privacy	
+							</span>
+							<a href="https://www.linkedin.com/in/venkat-balaji-aab8b718b" class="txt2">
+							developed by venkatesh R
+							</a>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src={% static 'vendor/jquery/jquery-3.2.1.min.js' %}></script>
+<!--===============================================================================================-->
+	<script src={% static 'vendor/animsition/js/animsition.min.js' %}></script>
+<!--===============================================================================================-->
+	<script src={% static 'vendor/bootstrap/js/popper.js' %}></script>
+	<script src={% static 'vendor/bootstrap/js/bootstrap.min.js' %}></script>
+<!--===============================================================================================-->
+	<script src={% static 'vendor/select2/select2.min.js' %}></script>
+<!--===============================================================================================-->
+	<script src={% static 'vendor/daterangepicker/moment.min.js' %}></script>
+	<script src={% static 'vendor/daterangepicker/daterangepicker.js' %}></script>
+<!--===============================================================================================-->
+	<script src={% static 'vendor/countdowntime/countdowntime.js' %}></script>
+<!--===============================================================================================-->
+	<script src={% static 'js/main.js' %}></script>
+
+</body>
+</html>
