@@ -27,7 +27,7 @@
         for(var i=0; i<input.length; i++) {
             if(validate(input[i]) == false){
                 showValidate(input[i]);
-                check=false;
+                check=true;
             }
         }
 
